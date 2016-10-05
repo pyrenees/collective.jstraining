@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records prefix="plone.resources/exercise1"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+      <value key="js">++plone++exercise1/script.js</value>
+  </records>
+
+</registry>
