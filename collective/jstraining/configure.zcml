@@ -3,5 +3,14 @@
    i18n_domain="collective.jstraining">
 
   <include package=".exercise1" />
+  <include package=".exercise2" />
+  <include package=".exercise3" />
+  <include package=".exercise4" />
+  <include package=".exercise5" />
+  <include package=".exercise6" />
+  <include package=".exercise7" />
+  <include package=".exercise8" />
+  <include package=".exercise9" />
+  <include package=".exercise10" />
 
 </configure>

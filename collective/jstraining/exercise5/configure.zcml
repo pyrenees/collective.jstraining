@@ -8,22 +8,14 @@
    <plone:static
      directory="static"
      type="plone"
-     name="exercise1"
-     />
-
-   <browser:page
-     name="exercise1"
-     for="*"
-     class=".browser.Exercise1View"
-     template="page.pt"
-     permission="zope2.View"
+     name="exercise5"
      />
 
    <genericsetup:registerProfile
      name="default"
-     title="Exercise 1"
+     title="Exercise 5"
      directory="profiles/default"
-     description="Install Exercise 1 training package"
+     description="Install Exercise 5 training package"
      provides="Products.GenericSetup.interfaces.EXTENSION"
      />
 
