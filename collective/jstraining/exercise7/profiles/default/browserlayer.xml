@@ -1,0 +1,6 @@
+<layers>
+  <layer
+    name="exercise7"
+    interface="collective.jstraining.exercise7.interfaces.IExercise7Layer"
+    />
+</layers>

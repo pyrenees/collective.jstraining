@@ -3,6 +3,7 @@
    xmlns:plone="http://namespaces.plone.org/plone"
    xmlns:browser="http://namespaces.zope.org/browser"
    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+   xmlns:z3c="http://namespaces.zope.org/z3c"
    i18n_domain="collective.jstraining">
 
    <plone:static
@@ -18,5 +19,13 @@
      description="Install Exercise 7 training package"
      provides="Products.GenericSetup.interfaces.EXTENSION"
      />
+
+   <adapter factory=".widget.LeadImageFocalNamedImageFieldWidget" />
+   <z3c:widgetTemplate
+    mode="input"
+    widget=".interfaces.IMinSizeImageWidget"
+    layer=".interfaces.IExercise7Layer"
+    template="image_widget.pt"
+    />
 
 </configure>
