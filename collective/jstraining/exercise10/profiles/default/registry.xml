@@ -1,4 +1,30 @@
 <?xml version="1.0"?>
 <registry>
 
+
+  <records prefix="plone.resources/exercise10"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++plone++exercise10/pattern.js</value>
+    <value key="css">
+      <element>++plone++exercise10/pattern.less</element>
+    </value>
+  </records>
+
+  <records prefix="plone.bundles/exercise10"
+            interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="resources">
+      <element>exercise10</element>
+    </value>
+    <value key="merge_with">default</value>
+    <value key="enabled">True</value>
+    <value key="jscompilation">++plone++exercise10/exercise10-compiled.min.js</value>
+    <value key="csscompilation">++plone++exercise10/exercise10-compiled.css</value>
+    <value key="last_compilation">2016-10-04 00:00:00</value>
+    <value key="stub_js_modules">
+      <element>jquery</element>
+      <element>mockup-patterns-livesearch</element>
+      <element>pat-registry</element>
+    </value>
+  </records>
+
 </registry>
