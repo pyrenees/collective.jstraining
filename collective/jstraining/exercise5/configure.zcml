@@ -5,12 +5,6 @@
    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
    i18n_domain="collective.jstraining">
 
-   <plone:static
-     directory="static"
-     type="plone"
-     name="exercise5"
-     />
-
    <genericsetup:registerProfile
      name="default"
      title="Exercise 5"
@@ -18,5 +12,7 @@
      description="Install Exercise 5 training package"
      provides="Products.GenericSetup.interfaces.EXTENSION"
      />
+
+  <plone:static directory="theme" name="exercise5" type="theme" />
 
 </configure>
