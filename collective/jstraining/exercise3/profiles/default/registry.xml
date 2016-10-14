@@ -1,4 +1,13 @@
 <?xml version="1.0"?>
 <registry>
 
+  <records prefix="plone.bundles/exercise3"
+            interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="merge_with">default</value>
+    <value key="enabled">True</value>
+    <value key="jscompilation">++plone++exercise3/exercise3-compiled.min.js</value>
+    <value key="csscompilation">++plone++exercise3/exercise3-compiled.css</value>
+    <value key="last_compilation">2016-10-04 00:00:00</value>
+  </records>
+
 </registry>
