@@ -18,6 +18,7 @@ define('exercise6',[
     }
   });
 
+  return Pattern;
 });
 
 require([
