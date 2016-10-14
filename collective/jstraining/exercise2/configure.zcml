@@ -11,6 +11,14 @@
      name="exercise2"
      />
 
+   <browser:page
+     name="exercise2"
+     for="*"
+     class=".browser.Exercise2View"
+     template="page.pt"
+     permission="zope2.View"
+     />
+
    <genericsetup:registerProfile
      name="default"
      title="Exercise 2"
