@@ -4,9 +4,6 @@
   <records prefix="plone.resources/tablesorter"
             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
     <value key="js">++plone++exercise8/jquery.tablesorter.min.js</value>
-    <value key="css">
-      <element>++plone++exercise8/pattern.less</element>
-    </value>
   </records>
   <records prefix="plone.resources/exercise8"
             interface='Products.CMFPlone.interfaces.IResourceRegistry'>

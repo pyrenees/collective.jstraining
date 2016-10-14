@@ -17,7 +17,6 @@ require([
     },
     init: function() {
       var that = this;
-      debugger;
       that.$el.tablesorter();
     }
   });

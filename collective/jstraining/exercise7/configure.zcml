@@ -20,7 +20,7 @@
      provides="Products.GenericSetup.interfaces.EXTENSION"
      />
 
-   <adapter factory=".widget.LeadImageFocalNamedImageFieldWidget" />
+   <adapter factory=".widget.LeadImageMinSizeImageFieldWidget" />
    <z3c:widgetTemplate
     mode="input"
     widget=".interfaces.IMinSizeImageWidget"

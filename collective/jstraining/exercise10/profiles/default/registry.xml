@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <registry>
 
-
   <records prefix="plone.resources/exercise10"
             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
     <value key="js">++plone++exercise10/pattern.js</value>

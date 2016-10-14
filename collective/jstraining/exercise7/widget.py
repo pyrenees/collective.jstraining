@@ -19,18 +19,20 @@ class MinSizeImageWidget(NamedImageWidget):
     implements(IMinSizeImageWidget)
 
     def pattern_options(self):
+        # provide the pattern options
         return json.dumps({
             'minHeight': 300,
             'minWidth': 300
         })
 
     def render(self):
+        # add the registered resource
         add_resource_on_request(self.request, 'exercise7')
         return super(MinSizeImageWidget, self).render()
 
 
 @adapter(getSpecification(ILeadImage['image']), IExercise7Layer)
 @implementer(IFieldWidget)
-def LeadImageFocalNamedImageFieldWidget(field, request):
+def LeadImageMinSizeImageFieldWidget(field, request):
     widget = z3c.form.widget.FieldWidget(field, MinSizeImageWidget(request))
     return widget
