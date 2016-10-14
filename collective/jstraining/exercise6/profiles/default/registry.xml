@@ -4,6 +4,11 @@
   <records prefix="plone.resources/exercise6"
             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
     <value key="js">++plone++exercise6/pattern.js</value>
+  </records>
+
+  <records prefix="plone.resources/bundle-exercise6"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++plone++exercise6/bundle.js</value>
     <value key="css">
       <element>++plone++exercise6/pattern.less</element>
     </value>
@@ -12,7 +17,7 @@
   <records prefix="plone.bundles/exercise6"
             interface='Products.CMFPlone.interfaces.IBundleRegistry'>
     <value key="resources">
-      <element>exercise6</element>
+      <element>bundle-exercise6</element>
     </value>
     <value key="merge_with">default</value>
     <value key="enabled">True</value>

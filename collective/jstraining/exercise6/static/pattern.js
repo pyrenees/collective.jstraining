@@ -1,6 +1,6 @@
 /* global require */
 
-require([
+define([
   'jquery',
   'mockup-patterns-base',
 ], function($, Base) {
