@@ -12,7 +12,7 @@ function ready(fn) {
 
 ready(function(){
   // make sure to load after doc is done loading...
-  if(document.querySelector('my-app')){
+  if(document.querySelector('.my-app')){
     // only load if found...
     platformBrowserDynamic().bootstrapModule(AppModule);
   }

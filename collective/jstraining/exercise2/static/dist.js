@@ -44,6 +44,12 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
+	
+	if(String.prototype.startsWith){
+	  // weird conflict between es6 polyfills and plone's polyfills
+	  delete String.prototype.startsWith;
+	}
+
 	__webpack_require__(1);
 	__webpack_require__(277);
 	__webpack_require__(629);
@@ -65389,7 +65395,10 @@
 	}
 	ready(function () {
 	    // make sure to load after doc is done loading...
-	    platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
+	    if (document.querySelector('my-app')) {
+	        // only load if found...
+	        platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(app_module_1.AppModule);
+	    }
 	});
 
 
@@ -65447,7 +65456,7 @@
 	    AppComponent = __decorate([
 	        core_1.Component({
 	            selector: 'my-app',
-	            template: '<h1>My First Angular App</h1>'
+	            template: '<h1>NG2 from Exercise 2</h1>'
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], AppComponent);
