@@ -6,6 +6,8 @@
    xmlns:z3c="http://namespaces.zope.org/z3c"
    i18n_domain="collective.jstraining">
 
+
+   <include package="z3c.form" file="meta.zcml"/>
    <plone:static
      directory="static"
      type="plone"
