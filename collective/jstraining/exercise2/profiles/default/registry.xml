@@ -2,36 +2,25 @@
 <registry>
 
 
-  <records prefix="plone.resources/exercise2-js"
-            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-    <value key="js">++plone++exercise2/ng2app/dist/main.8b778eea5dd35968ef66.bundle.js</value>
-  </records>
-
-  <records prefix="plone.resources/exercise2-styles"
-            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
-    <value key="js">++plone++exercise2/ng2app/dist/styles.b52d2076048963e7cbfd.bundle.js</value>
-  </records>
-
   <records prefix="plone.resources/exercise2-inline"
             interface='Products.CMFPlone.interfaces.IResourceRegistry'>
     <value key="js">++plone++exercise2/ng2app/dist/inline.js</value>
   </records>
+  <records prefix="plone.resources/exercise2-main"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++plone++exercise2/ng2app/dist/main.8b778eea5dd35968ef66.bundle.js</value>
+    <value key="deps">exercise2-inline</value>
+    <value key="deps">exercise2-style</value>
+  </records>
+  <records prefix="plone.resources/exercise2-style"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++plone++exercise2/ng2app/dist/styles.b52d2076048963e7cbfd.bundle.js</value>
+  </records>
 
-
-    <records prefix="plone.bundles/exercise2"
-              interface='Products.CMFPlone.interfaces.IBundleRegistry'>
-      <value key="resources">
-        <element>exercise2-inline</element>
-        <element>exercise2-styles</element>
-        <element>exercise2-js</element>
-      </value>
-      <value key="merge_with">default</value>
-      <value key="enabled">True</value>
-      <value key="compile">False</value>
-      <value key="jscompilation">++plone++exercise2/exercise2-compiled.min.js</value>
-      <value key="csscompilation">++plone++exercise2/exercise2-compiled.css</value>
-      <value key="last_compilation">2016-09-04 00:00:00</value>
-    </records>
+  <records prefix="plone.resources/exercise2"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++plone++exercise2/ng2app/main.js</value>
+  </records>
 
 
 </registry>
